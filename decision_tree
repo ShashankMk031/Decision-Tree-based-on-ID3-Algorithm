@@ -1,0 +1,17 @@
+digraph {
+	root [label=Outlook fillcolor=lightblue shape=box style=filled]
+	Humidity [label=Humidity fillcolor=lightblue shape=box style=filled]
+	Outlook -> Humidity [label=Sunny]
+	Humidity_High_No [label=No fillcolor=lightgreen shape=ellipse style=filled]
+	Humidity -> Humidity_High_No [label=High]
+	Humidity_Normal_Yes [label=Yes fillcolor=lightgreen shape=ellipse style=filled]
+	Humidity -> Humidity_Normal_Yes [label=Normal]
+	Outlook_Overcast_Yes [label=Yes fillcolor=lightgreen shape=ellipse style=filled]
+	Outlook -> Outlook_Overcast_Yes [label=Overcast]
+	Wind [label=Wind fillcolor=lightblue shape=box style=filled]
+	Outlook -> Wind [label=Rain]
+	Wind_Weak_Yes [label=Yes fillcolor=lightgreen shape=ellipse style=filled]
+	Wind -> Wind_Weak_Yes [label=Weak]
+	Wind_Strong_No [label=No fillcolor=lightgreen shape=ellipse style=filled]
+	Wind -> Wind_Strong_No [label=Strong]
+}
